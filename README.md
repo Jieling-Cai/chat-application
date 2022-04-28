@@ -1,4 +1,4 @@
-# chat-application
+# Chat Application
 A server for chat application based on the client-server model.
 
 Supported:
@@ -17,4 +17,9 @@ Supported:
 (4) The server can keep partial messages for solving possible delay and later process them when the rest of the messages arrives from client. 
     For partial messages, if there is no follow-up message for 1 minute, the server will discard that partial message, and the connection with that particular client will be closed.
 (5) Error handling (e.g. Client arbitrarily closing the socket. A new client sends a CHAT message instead of HELLO. A CHAT message without a destination or client trying to chat with herself.)
+```
+## Usage
+```bash
+make
+./a.out [port]
 ```
